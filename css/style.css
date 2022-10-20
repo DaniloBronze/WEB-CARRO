@@ -1,0 +1,243 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Oswald', sans-serif;
+}
+
+.container{
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+header{
+    padding: 20px 2% 35px 2%;
+    height: 130px;
+}
+
+.clear{
+    clear: both;
+}
+
+header div.logo{
+    float: left;
+}
+
+header nav.desktop{
+    float: right;
+    position: relative;
+    top: 40px;
+}
+
+nav.mobile{
+    display: none;
+    float: right;
+    width: 32px;
+    height: 32px;
+    background-size: 100% 100%;
+    background-image: url('../imagens/icon_menu.png');
+    margin-top: 40px;
+}
+
+nav.mobile ul{
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 110px;
+    border-bottom: 3px solid #eb2d2d;
+    z-index: 999;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.2);
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    line-height: 1;
+    display: none;
+}
+
+nav.mobile li{
+    font-size: 23px;
+    padding: 20px 0px;
+    font-style: italic;
+}
+
+nav.mobile li a{
+    text-decoration: none;
+    color: black;
+}
+
+header nav.desktop ul{
+    list-style-type: none;
+}
+
+header nav.desktop ul li{
+    float: left;
+    font-size: 23px;
+    padding: 0 30px;
+    font-family: 'Oswald', sans-serif;
+}
+
+header nav.desktop a{
+    color: black;
+    text-decoration: none;
+}
+
+section.banner{
+    width: 100%;
+    height: 650px;
+    background-color: black;
+    background-image: url('../imagens/bg.jpg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: right bottom;
+    overflow: hidden;
+}
+
+.text-banner{
+    padding: 100px;
+}
+
+.text-banner-single{
+    width: 320px;
+    margin-top: 20px;
+    height: 50px;
+    font-size: 23px;
+    padding: 5px 30px;
+    text-transform: uppercase;
+    background-image: url('../imagens/box-text.png');
+    background-size: 100% 100%;
+    color: white;
+    border-radius: 11px;
+    font-style: italic;
+}
+
+.text-banner .text-banner-single:nth-of-type(2){
+    width: 250px;
+    position: relative;
+    left: -10px;
+}
+
+.text-banner .text-banner-single:nth-of-type(3){
+    width: 180px;
+    position: relative;
+    left: -20px;
+}
+
+.text-banner .text-banner-single:nth-of-type(4){
+    width: 320px;
+    background-image: none;
+    background-color: white;
+    color: black;
+    position: relative;
+    left: -20px;
+    border-radius: 0px 10px;
+}
+
+section.veiculos-destaques{
+    padding: 90px 2%;
+}
+
+.line-titulo{
+    position: relative;
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.ln1{
+    position: absolute;
+    height: 2px;
+    width: 100%;
+    background: black;
+    top: 20px;
+}
+
+section.veiculos-destaques .line-titulo h2{
+    text-align: center;
+    font-size: 27px;
+    font-style: italic;
+    text-transform: uppercase;
+    position: relative;
+    background: white;
+    display: inline-block;
+    padding: 0 20px;
+}
+
+section.veiculos-destaques .container{
+    max-width: 1000px;
+    padding: 40px 0;
+}
+
+.vitrine-destaque{
+    float: left;
+    width: 33.3%;
+}
+
+/*TECNICAR PRA VITRINE COM IMG*/
+
+.vitrine-destaque .carro-img{
+    width: 100%;
+    padding-top: 100%;
+    background-size: 100% 100%;
+    border: 8px solid white;
+    border-radius: 20px;
+}
+
+.vitrine-destaque h2{
+    padding-left: 5px;
+    color: black;
+    font-style: italic;
+    font-size: 20px;
+}
+
+.vitrine-destaque p{
+    padding-top: 5px;
+    padding-left: 5px;
+    font-size: 15px;
+    font-style: italic;
+    color: #353535;
+}
+
+.vitrine-destaque a{
+    padding-top: 5px;
+    padding-left: 5px;
+    font-size: 15px;
+    font-style: italic;
+    color: #353535;
+    text-decoration: none;
+}
+
+
+@media screen and (max-width: 1024px){
+    section.banner{
+        background-position: 200% 100%;
+        background-size: 90% auto;
+    }
+}
+
+@media screen and (max-width: 768px){
+    section.banner{
+        background-position: 100px center;
+        background-size: cover;
+        height: 80vh;
+    }
+
+    nav.desktop{
+        display: none;
+    }
+
+    nav.mobile{
+        display: block;
+    }
+
+}
+
+@media screen and (max-width: 580px){
+    .text-banner{
+        padding: 30px;
+    }
+
+    .text-banner-single{
+        font-size: 18px;
+    }
+}
